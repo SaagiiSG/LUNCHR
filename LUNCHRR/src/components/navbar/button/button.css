@@ -1,4 +1,4 @@
-button{
+.navbutton{
     margin: 8px 0px;
     width:100%;
     display: flex;
@@ -15,18 +15,19 @@ button{
     border: none;
     border-left: transparent;
 }
-button:hover{
+.navbutton:hover{
     color: var(--Accent-pink, #B26CAF);
     transition: 300ms;
     animation: ease-out;
 }
-button:active{
+.navbutton:active{
     transition: 500ms;
     animation: ease-out;
     border-left: 2px solid #CA53BA;
+    
     background: linear-gradient(90deg, rgba(202, 83, 186, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
 }
-button:focus{
+.navbutton:focus{
     transition: 500ms;
     animation: ease-out;
     border-left: 2px solid #CA53BA;

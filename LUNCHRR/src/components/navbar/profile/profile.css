@@ -7,13 +7,18 @@
 .profile{
     min-width: 255px;
     max-width: 255px;
-    height: auto;
+    min-height: 160px;
+    max-height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    background-color: #30324a;
     border-bottom: var(--Number, 1px) solid #CA53BA;
     padding: 52px 18px;
+    position: fixed;
+    z-index: 10;
+    background-color: #30324a;
 }
 .user-name{
     display: flex;

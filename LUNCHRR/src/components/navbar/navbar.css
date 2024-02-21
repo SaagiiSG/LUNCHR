@@ -6,10 +6,28 @@
 }
 nav{
     padding-right: 2px;
-    width: 255px;
+    min-width: 255px;
+    max-height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
     height: fit-content;
-    min-height: 110lvh;
+    /* padding-bottom: 24px; */
     background-color: #30324A;
 
 }
-         
+nav::-webkit-scrollbar{
+    display: none;
+}
+.scroll{
+    margin-top: 180px;
+    min-width: 255px;
+    max-height: 100vh ;
+    overflow-y: scroll;
+    height: fit-content;
+    padding-right: 2px;
+    
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}

@@ -26,11 +26,13 @@ div.drop-down-menu > div.button-container{
     z-index: -1;
 }
 div.drop-down-menu:hover{
+    border: var(--Number, 1px) solid var(--Accent-pink, #B26CAF);
+    
     height: auto;
     transition: 300ms;
 }
 div.drop-down-menu:hover >div.button-container{
-   
+    
     display: flex;
     flex-direction: column;
     transition: 300ms;
