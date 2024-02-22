@@ -36,11 +36,7 @@
     transition: 300ms;
     scale: 1.01;
 }
-<<<<<<< HEAD
- .active{
-=======
-.card:active{
->>>>>>> f58d0dcb61aaae2dc904a89cce9092ddea5a646b
+.active{
     display: flex;
     width: 830px;
     padding: 8px 16px;
@@ -57,17 +53,10 @@
     line-height: normal;
     letter-spacing: -0.96px;
 }
-<<<<<<< HEAD
- .active> .name > p{
+.active > .name > p{
     color: var(--White, #F5F5F5);
 }
 .active > div.selector
-=======
-.card:active > .name > p{
-    color: var(--White, #F5F5F5);
-}
-.card:active > div.selector
->>>>>>> f58d0dcb61aaae2dc904a89cce9092ddea5a646b
 {
     border-radius: 100px;
     border: var(--Number, 1px) solid var(--Primary-pink, #CA53BA);

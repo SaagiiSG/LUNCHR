@@ -5,6 +5,8 @@
     background-color: #30324a;
     align-items: flex-end;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
   
 }
 .main{

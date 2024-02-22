@@ -7,7 +7,7 @@ export default function Navbar(){
         <nav>
             <Profile
                 name={"Name"}
-                position={"Position"}
+                position={"class"}
             />
         <section className="scroll"> 
         <Button
