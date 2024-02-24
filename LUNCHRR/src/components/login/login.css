@@ -17,23 +17,26 @@
     font-family:"Poppins", sans-serif;
 }
 .container{
+    width: auto;
+    height: auto;
     display: flex;
-    padding: 3rem 14rem;
+    padding: 2vw 8vw;
     flex-direction: column;
     align-items: center;
-    gap: 4rem;
+    gap: 4vw;
     border-radius: 48px;
     border: 1px solid rgba(255, 255, 255, 0.63);
     background: rgba(255, 255, 255, 0.26);
     backdrop-filter: blur(22.200000762939453px);
+   
 }
 .header{
     width: 377px;
-    height: 132px;
+    height: auto;
     color: var(--White, #F5F5F5);
     text-align: center;
     font-family: Poppins;
-    font-size: 48px;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -42,7 +45,7 @@
     margin-left: 24px;
     color: var(--White, #F5F5F5);
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -51,8 +54,9 @@
     padding-left: 20px;
     font-size: 24px;
     color: #F5F5F5;
-    width: 497px;
-    height: 64px;
+    width: 35vw;
+    min-width:300px ;
+    height: 4rem;
     flex-shrink: 0;
     border-radius: 24px;
     border: 2px solid var(--Dark-blue, #30324A);
@@ -90,9 +94,6 @@
     background-color:#30324a91;
     transition: 300ms;
 }
-/* to do list
-    - button clicked
-*/
 input[type=text]:focus {
     transition: 200ms;
     scale: 1.01;

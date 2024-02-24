@@ -7,9 +7,10 @@
 nav{
     padding-right: 2px;
     min-width: 255px;
+    max-width: 255px;
     max-height: 100vh ;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     /* overflow-y: scroll; */
     height: fit-content;
     /* padding-bottom: 24px; */

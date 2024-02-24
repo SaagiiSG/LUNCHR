@@ -25,7 +25,7 @@ export default function Delete(){
             console.log(users);
     return(
         <section className="delete-page">
-                <Navbar/>
+                {/* <Navbar/> */}
             <section className="main">
                 <Search/>
                     <section className="display">

@@ -16,7 +16,7 @@
     background-color: #30324a;
     border-bottom: var(--Number, 1px) solid #CA53BA;
     padding: 52px 18px;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     background-color: #30324a;
 }
