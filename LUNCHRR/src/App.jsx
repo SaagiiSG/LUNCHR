@@ -19,7 +19,10 @@ function App() {
       <section>
         {/* <Login/> */}
         <section className="display-pages">
-              <Navbar/>
+              <Navbar
+                username={"Saran-Ochir"}
+                class={"11.1"}
+              />
             <section className="page-display">
                 {/* <Delete/> */}
                 <Add/>
