@@ -17,7 +17,7 @@ function App() {
   }
   return(
       <section>
-        {/* <Login/> */}
+        <Login/>
         <section className="display-pages">
               <Navbar
                 username={"Saran-Ochir"}
