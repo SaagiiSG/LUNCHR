@@ -2,7 +2,7 @@
     margin: 8px 0px;
     width:100%;
     display: flex;
-    padding: 8px 24px;
+    padding: 10px 24px;
     justify-content: center;
     align-items: center;
     background-color: #30324A;
@@ -14,6 +14,9 @@
     line-height: normal;
     border: none;
     border-left: transparent;
+    border-top: 1px solid #CA53BA;
+    border-bottom: 1px solid #CA53BA;
+    
 }
 .navbutton:hover{
     color: var(--Accent-pink, #B26CAF);
@@ -21,9 +24,10 @@
     animation: ease-out;
 }
 .nav-btn-active{
-    transition: 0ms;
+    transition: 300ms;
+    border-top:none;
     border-left: 2px solid #CA53BA;
-    
+    border-bottom: none ;
     background: linear-gradient(90deg, rgba(202, 83, 186, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 /* .navbutton:focus{

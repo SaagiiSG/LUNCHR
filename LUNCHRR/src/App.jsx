@@ -1,10 +1,12 @@
 
 import "./App.css"
 import Delete from "./components/delete-page/delete"
-import Navbar from "./components/navbar/navbar"
 import Login from "./components/login/Login"
+import Profile from "./components/navbar/profile/profile"
+import Button from "./components/navbar/button/button"
 // import Read from "./assets/data.js"
 import Add from "./components/add-page/add"
+import React from "react"
 function App() {
   
     const data = async () => {
@@ -15,17 +17,43 @@ function App() {
           console.log(err)
       })
   }
+
+  const [onAir , setOnAir] = React.useState(false)
+
+  function displayPage(){
+    setOnAir(!onAir)
+  }
   return(
       <section>
         <Login/>
         <section className="display-pages">
-              <Navbar
-                username={"Saran-Ochir"}
-                class={"11.1"}
-              />
+              <nav>
+                      <Profile 
+                      name={"Saran-Ochir"}
+                      position={"11.1"}
+                      />
+                  <div className="scroll">
+                    
+                      <button className="button-function">
+                        <Button btnName={"Dashboard"}/>
+                      </button>
+                      
+                      <button className="button-function" onClick={displayPage}>
+                        <Button btnName={"Add card"}/>
+                      </button>
+                      
+                      <button className="button-function">
+                        <Button btnName={"Delete card"}/>
+                      </button>
+                  
+                  </div>
+              </nav>
             <section className="page-display">
                 {/* <Delete/> */}
-                <Add/>
+                
+                <Add
+                  onDisplay={onAir}
+                />
             </section>
               
         </section>

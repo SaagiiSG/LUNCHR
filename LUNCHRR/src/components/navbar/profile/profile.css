@@ -14,7 +14,7 @@
     align-items: center;
     gap: 16px;
     background-color: #30324a;
-    border-bottom: var(--Number, 1px) solid #CA53BA;
+    /* border-bottom: var(--Number, 1px) solid #B26CAF; */
     padding: 52px 18px;
     position: absolute;
     z-index: 10;

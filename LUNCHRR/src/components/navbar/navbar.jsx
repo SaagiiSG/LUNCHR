@@ -11,12 +11,15 @@ export default function Navbar(props){
             />
         <section className="scroll"> 
             <Button
+                btnName={"Dashboard"}
+            />
+            <Button
                 btnName={"Add card"}/>
 
             <Button
                 btnName={"Delete card"}/>
         
-                <Drop gradeName={"12"}
+                {/* <Drop gradeName={"12"}
                 btnName={"12"}/>
                 <Drop gradeName={"11"}
                 btnName={"11"}/>
@@ -29,7 +32,7 @@ export default function Navbar(props){
                 <Drop gradeName={"7"}
                 btnName={"7"}/>
                 <Drop gradeName={"6"}
-                btnName={"6"}/>
+                btnName={"6"}/> */}
             </section>
         </nav>
         

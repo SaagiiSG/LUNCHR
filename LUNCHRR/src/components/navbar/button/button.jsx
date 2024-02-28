@@ -8,7 +8,18 @@ export default function Button(props){
         setLook(!look)
     }
     
+    function pageChange(){
+        const [visible , setVisible] = React.useState(false)
+        useEffect(()=>{
+            setVisible(!visible)
+        }, [])
+    }
+
+    const handleClick= () =>{
+        Change();
+        pageChange()
+    }
     return(
-    <button onClick={Change} className={`navbutton ${look ?'nav-btn-active' :''}`} >{props.btnName}</button>
+    <button onClick={handleClick}className={`navbutton ${look ?'nav-btn-active' :''}`} >{props.btnName}</button>
     )
 }
