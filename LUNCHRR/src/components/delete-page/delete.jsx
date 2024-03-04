@@ -7,7 +7,7 @@ import Card from "./card/card"
 import React, { useEffect } from "react"    
    
 
-export default function Delete(){
+function Delete(props){
 
             const [users , setUsers] = React.useState([])
 
@@ -22,31 +22,35 @@ export default function Delete(){
                     console.log(err)
                 })
             }
-            console.log(users);
-    return(
-        <section className="delete-page">
-                {/* <Navbar/> */}
-            <section className="main">
-                <Search/>
-                    <section className="display">
-                       
-                        {users.map((user) => 
-                            <Card
-                            key={user.key}
-                            grade={user.id}
-                            name={user.username}
-                            />
-                        )}
-
-                    </section>
-                
-                <section className="button-container">
-
-                    <ButtonMain buttonname={"Delete user"}/>
+            const deletePage = <section className="delete-page">
+            {/* <Navbar/> */}
+        <section className="main">
+            <Search/>
+                <section className="display">
+                   
+                    {users.map((user) => 
+                        <Card
+                        key={user.key}
+                        grade={user.id}
+                        name={user.username}
+                        />
+                    )}
 
                 </section>
-                
+            
+            <section className="button-container">
+
+                <ButtonMain buttonname={"Delete user"}/>
+
             </section>
+            
         </section>
-    )
+    </section>;
+            // console.log(users);
+    if(props.onDisplay){
+            return(
+                deletePage
+                )    
+    }
 }
+export default Delete

@@ -9,19 +9,16 @@ export default function Card(props){
     function Change(){
         setCard(!card)
     };
-       
-    return(
-        <button onClick={Change} className={`card ${card ? 'active':''}`}>
+    const deletePage =  <button onClick={Change} className={`card ${card ? 'active':''}`}>
             
-            <div className="name" key={props.key}>
+    <div className="name" key={props.key}>
 
-                <p>{props.grade}</p>
-                <p>{props.name}</p>
-                <p>{props.surname}</p>
-            </div>
-            <div className="selector">.</div>
+        <p>{props.grade}</p>
+        <p>{props.name}</p>
+        <p>{props.surname}</p>
+    </div>
+    <div className="selector">.</div>
 
-        </button>
-    )
-
+</button>;
+    
 }

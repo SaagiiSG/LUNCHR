@@ -4,6 +4,13 @@ import "./button.css"
 export default function Button(props){
     const [look , setLook] = React.useState(false)
 
+    // function Change(){
+    //     if(props.onDisplay = true){
+    //             setLook(look = true)
+    //     }else{
+    //         setLook(!look)
+    //     }
+    //      }
     function Change(){
         setLook(!look)
     }
@@ -20,6 +27,6 @@ export default function Button(props){
         pageChange()
     }
     return(
-    <button onClick={handleClick}className={`navbutton ${look ?'nav-btn-active' :''}`} >{props.btnName}</button>
+    <div onClick={handleClick} className={`navbutton ${look ?'nav-btn-active' :''}`} >{props.btnName}</div>
     )
 }

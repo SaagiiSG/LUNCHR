@@ -18,11 +18,28 @@ function App() {
       })
   }
 
-  const [onAir , setOnAir] = React.useState(false)
-
-  function displayPage(){
-    setOnAir(!onAir)
-  }
+  const [onAdd , setOnAdd] = React.useState(false)
+  const [onDelete , setOnDelete] = React.useState(false)
+  const [onDashboard , setOnDashboard] = React.useState(true)
+  
+  function displayAdd(){
+        setOnAdd(!onAdd)
+        if(onAdd = true){
+          setOnDelete(false)
+          
+          setOnDashboard(false)
+        }
+      }
+      function displayDelete(){
+        setOnDelete(!onDelete)
+        if(onDelete = true){
+          setOnAdd(onAdd = false)
+          if(onAdd = false){
+            console.log("onAdd inactive")
+          }
+          setOnDashboard(onDashboard = false)
+        }
+      }    
   return(
       <section>
         <Login/>
@@ -38,22 +55,28 @@ function App() {
                         <Button btnName={"Dashboard"}/>
                       </button>
                       
-                      <button className="button-function" onClick={displayPage}>
-                        <Button btnName={"Add card"}/>
+                      <button className="button-function" onClick={displayAdd}>
+                        <Button btnName={"Add user"} onDisplay={onAdd}/>
                       </button>
                       
-                      <button className="button-function">
-                        <Button btnName={"Delete card"}/>
+                      <button className="button-function" onClick={displayDelete}>
+                        <Button btnName={"Delete user"}
+                        onDisplay={onAdd}
+                        />
                       </button>
-                  
+
                   </div>
+                  
               </nav>
             <section className="page-display">
-                {/* <Delete/> */}
+                <Delete
+                onDisplay={onDelete}/>
                 
                 <Add
-                  onDisplay={onAir}
+                  onDisplay={onAdd}
                 />
+                
+                
             </section>
               
         </section>

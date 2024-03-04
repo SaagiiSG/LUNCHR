@@ -2,7 +2,9 @@ import "./add.css"
 import Navbar from "../navbar/navbar";
 
 function Add(props){
-
+        const doesNothing = () =>{
+            console.log("Button clicked");
+        }
     const addPage = <section className="add-page">
                     <h1>Add user</h1>
             <form  >
@@ -27,16 +29,17 @@ function Add(props){
                 <input type="text" placeholder="enter phone number"/>
             </div>
 
-                    <button>Add user</button>
+                    <button onClick={doesNothing}>Add user</button>
                 </form>
                     
                 </section>;
     // return(addPage)
-    if(props.onDisplay){
-        return(
-            addPage
-        )
+        const empty = ""
+        if(props.onDisplay){
+            return(
+                addPage
+            )
+        }
+    
     }
-   
-}
 export default Add

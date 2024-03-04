@@ -14,16 +14,18 @@
     line-height: normal;
     border: none;
     border-left: transparent;
-    border-top: 1px solid #CA53BA;
+    /* border-top: 1px solid #CA53BA; */
     border-bottom: 1px solid #CA53BA;
     
 }
 .navbutton:hover{
+    font-family: Poppins;
     color: var(--Accent-pink, #B26CAF);
     transition: 300ms;
     animation: ease-out;
 }
 .nav-btn-active{
+    font-family: Poppins;
     transition: 300ms;
     border-top:none;
     border-left: 2px solid #CA53BA;
