@@ -1,0 +1,73 @@
+*{
+    font-family:"Poppins", sans-serif;
+}
+
+
+.display-pages{
+    width: 100%;
+    height: 100vh;
+    background: #30324a;
+    display: flex;
+    justify-content: start;
+   
+
+}
+.page-display{
+    width: 100%;
+    height: 100%;
+    height: 98%;
+    /* width: 100%; */
+    /* padding-top: 2em; */
+    gap: 2em;
+    /* display: flex; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:  center; */
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 24px 0 0 0;
+    align-self: flex-end;
+}
+
+.page-display::-webkit-scrollbar{ 
+    display:none
+}
+nav{
+    gap: 0;
+
+    padding-right: 2px;
+    min-width: 255px;
+    max-width: 255px;
+    max-height: 100vh ;
+    display: flex;
+    flex-direction: column; 
+    height: fit-content;
+    background-color: #30324A;
+
+}
+nav::-webkit-scrollbar{
+    display: none;
+}
+nav > .scroll{
+    /* margin-top: 180px; */
+    min-width: 255px;
+    max-height: 100vh ;
+    /* overflow-y: scroll; */
+    height: auto;
+    padding-right: 2px;
+    /* gap: 4px; */
+    padding-bottom: 4px;
+} 
+nav > .scroll > button{
+    margin: 0;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+    /* border: none; */
+    border:none;
+    /* padding: 2px 0; */
+}
+.scroll::-webkit-scrollbar{
+    display: none;
+}
